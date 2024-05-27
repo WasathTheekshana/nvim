@@ -13,3 +13,6 @@ vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true, silent = true })
 -- Delete word by pressing ctrl + backpace or delete
 vim.keymap.set('n', '<C-BS>', 'dw', { silent = true, desc = 'delete from cursor to ending word' })
 vim.keymap.set('n', '<C-Del>', 'db', { silent = true, desc = 'delete from cursor to beginning word' })
+
+-- Git diff view open 
+vim.keymap.set('n', '<leader>GDO', ':DiffviewFileHistory<CR>', { desc = '[G]it [D]iff [O]pen' })
