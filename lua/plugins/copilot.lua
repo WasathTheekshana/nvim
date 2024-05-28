@@ -9,7 +9,7 @@ return {
         keymap = {
           jump_prev = '[[',
           jump_next = ']]',
-          accept = '<CR>',
+          accept = '<Tab>',
           refresh = 'gr',
           open = '<M-CR>',
         },
@@ -23,9 +23,9 @@ return {
         auto_trigger = true,
         debounce = 75,
         keymap = {
-          accept = '<M-l>',
-          accept_word = false,
-          accept_line = false,
+          accept = '<Tab>',
+          accept_word = '<S-Tab>', -- Shift+Tab to accept the word suggestion
+          accept_line = '<C-Tab>', -- Ctrl+Tab to accept the line suggestion
           next = '<M-]>',
           prev = '<M-[>',
           dismiss = '<C-]>',
